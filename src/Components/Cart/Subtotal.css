@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.sub_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.subtotal_gift {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 8px;
+}
+
+.btnSub {
+  width: 320px;
+  height: 32px;
+  font-size: 18px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  background: #edfdff;
+  margin-top: 15px;
+  margin-right: 10px;
+  font-weight: 500;
+  transition: 300ms;
+}
+
+.btnSub:hover {
+  background: #e6f3f5;
+}

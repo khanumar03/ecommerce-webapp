@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #232f3e;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  z-index: 1;
+}
+
+.amz_logo {
+  position: relative;
+  width: 110px;
+  object-fit: contain;
+  margin-top: 8px;
+}
+
+.logo {
+  /* margin-top:10px; */
+  padding: 5px 15px;
+  display: flex;
+  cursor: pointer;
+}
+
+.left_nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 15px;
+}
+
+.right_nav {
+  display: flex;
+  align-items: center;
+}
+
+.Address {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  line-height: 15px;
+}
+
+.header_search {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  max-width: 1000px;
+  flex: 1;
+}
+.search {
+  width: 100%;
+  height: 38px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.header_optionLineOne {
+  font-size: 10px;
+  font-weight: 600;
+  color: rgb(233, 233, 233);
+  display: block;
+  letter-spacing: 1px;
+}
+
+.header_optionLineTwo {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.S_icon {
+  padding: 6.5px;
+  background: orange;
+  position: relative;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.header_option {
+  /* margin-right: 2px; */
+  line-height: 15px;
+  cursor: pointer;
+  padding: 8px 15px;
+}
+
+.header_optionBasket {
+  padding: 6px 15px;
+  display: flex;
+  cursor: pointer;
+}
+
+.header_basketcount {
+  color: orange;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.hovereffect {
+  position: relative;
+}
+
+.hovereffect::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid #eaeded;
+  border-radius: 2px;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.hovereffect:hover::after {
+  opacity: 1;
+}
+
+
+@media only screen and (max-width: 685px) {
+  .header_search {
+      display:none ;
+  }
+  .RO {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .Address{
+      display:none ;
+  }
+}
+
+.TD {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media only screen and (max-width: 432px) {
+  .header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo{
+    display:none ;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .RO{
+    display:none ;
+  }
+}

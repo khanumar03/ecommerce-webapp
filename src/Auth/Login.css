@@ -1,0 +1,15 @@
+.login{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fcffff;
+}
+
+.dfg {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}

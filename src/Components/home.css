@@ -1,0 +1,122 @@
+.home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #eaeded;
+  /* overflow: hidden; */
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  height: 650px;
+}
+
+.img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 300ms;
+  mask-image: linear-gradient(to top, transparent 30%, black 70%);
+}
+
+.btn {
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 240px;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #eaeded;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.btn:hover::after {
+  opacity: 1;
+}
+
+.btnleft {
+  left: 0;
+}
+.btnright {
+  right: 0;
+}
+
+.nextslide {
+  transform: translateX(100%);
+  opacity: 1;
+}
+
+.activeslide {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.spin {
+  height: 200px;
+}
+
+.items {
+  position: relative;
+  top: -390px;
+  width: 100%;
+  height: 450px;
+}
+
+.f_row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  place-items: center;
+}
+
+.s_row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  place-items: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  .img {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  .items {
+    top: 20px;
+    height: 100%;
+  }
+  .f_row {
+    display: flex;
+    flex-direction: column;
+  }
+  .s_row {
+    display: flex;
+    flex-direction: column;
+  }
+}
